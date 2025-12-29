@@ -1,0 +1,41 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.container-xl,
+.container-xxl {
+  padding: 0;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 30px;
+
+  background: #ccc;
+  font-size: 3rem;
+  font-weight: 600;
+}
