@@ -41,6 +41,20 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #fdfdfd;
+  padding: 16px 37px;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
 .inner {
   display: flex;
   align-items: center;
@@ -56,10 +70,14 @@ a {
 }
 
 /* ===================================================== Header ==================================== */
+.header {
+  background: #fbfaff;
+}
+
 .header__inner {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .header__info {
@@ -113,4 +131,110 @@ a {
 .navbar__link:hover {
   color: #080415;
   text-shadow: 1px 0 0 currentColor;
+}
+
+/* ===================================================== Hero ==================================== */
+.hero__bg {
+  position: relative;
+  padding-top: 44px;
+  background: #fbfaff;
+}
+
+.hero__decor-right {
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+
+  width: 835px;
+  height: 772px;
+  z-index: 1;
+}
+
+.hero__decor-left {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 341px;
+  height: 170px;
+  z-index: 1;
+}
+
+.hero__img {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  max-width: 514px;
+  max-height: 705px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.hero__info {
+  margin-top: 137px;
+}
+
+.hero__heading {
+  font-weight: 500;
+  font-size: 8rem;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: #080415;
+}
+
+.hero__desc {
+  margin-top: 20px;
+  width: 370px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #51586a;
+}
+
+.hero__action {
+  margin-top: 50px;
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.hero__action-link {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  text-decoration: underline;
+  color: #080415;
+}
+
+.hero__more {
+  margin: 104px 0 38px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.hero__text {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #51586a;
+}
+
+.hero__icon-wrap {
+  padding: 12px 12px;
+  border: 1px solid rgb(8 4 21 / 10%);
+  border-radius: 50%;
+}
+
+.hero__icon-wrap:hover ~ .hero__icon {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.hero__icon {
+  width: 14px;
+  color: #080415;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
