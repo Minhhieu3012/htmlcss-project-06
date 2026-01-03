@@ -55,6 +55,21 @@ a {
   opacity: 0.9;
 }
 
+.section-heading {
+  font-weight: 500;
+  font-size: 5.6rem;
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+  color: #080415;
+}
+
+.section-desc {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #51586a;
+}
+
 .inner {
   display: flex;
   align-items: center;
@@ -330,4 +345,59 @@ a {
   font-size: 1.6rem;
   line-height: 1.67;
   color: #080415;
+}
+
+/* ===================================================== Specialities ==================================== */
+.specialities {
+  margin-top: 133px;
+}
+
+.specialities__top {
+  width: 534px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.specialities__desc {
+  text-align: center;
+}
+
+.specialities__list {
+  margin-top: 60px;
+}
+
+.specialties__item {
+  background: #fbfaff;
+  padding: 33px 42px;
+}
+
+.specialities__item-title {
+  margin-top: 22px;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+  color: #080415;
+}
+
+.specialtities__item-desc {
+  margin-top: 15px;
+}
+
+.specialities__icon-wrap {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 1px solid rgb(8 4 21 / 10%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specialities__icon {
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
 }
