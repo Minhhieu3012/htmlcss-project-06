@@ -226,8 +226,11 @@ a {
   border-radius: 50%;
 }
 
-.hero__icon-wrap:hover ~ .hero__icon {
+.hero__icon-wrap:hover {
   background: var(--primary-color);
+}
+
+.hero__icon:hover {
   color: #fff;
 }
 
@@ -237,4 +240,94 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ===================================================== Client ==================================== */
+.client {
+  margin-top: 98px;
+}
+
+.client__heading {
+  position: relative;
+  font-weight: 500;
+  width: 253px;
+  font-size: 4.2rem;
+  line-height: 1.19;
+  letter-spacing: -0.04em;
+  color: #080415;
+}
+
+.client__heading::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: -99px;
+  width: 86px;
+  height: 2px;
+  background: var(--primary-color);
+}
+
+.client .row {
+  row-gap: 36px;
+}
+
+.client__item {
+  display: flex;
+  align-items: center;
+
+  height: 36px;
+}
+
+.client__logo-img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+.col:nth-child(8) .client__logo-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.client__logo-wrap {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+
+.col:nth-child(2) .client__logo-wrap {
+  background: #fbfaff;
+}
+
+.col:nth-child(3) .client__logo-wrap {
+  background: #fee101;
+}
+
+.col:nth-child(4) .client__logo-wrap {
+  background: #ff0000;
+}
+
+.col:nth-child(5) .client__logo-wrap {
+  background: #14a800;
+}
+
+.col:nth-child(6) .client__logo-wrap {
+  background: #ffffff;
+}
+
+.col:nth-child(7) .client__logo-wrap {
+  background: #7f54b3;
+}
+
+.client__logo-name {
+  margin-left: 13px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.67;
+  color: #080415;
 }
