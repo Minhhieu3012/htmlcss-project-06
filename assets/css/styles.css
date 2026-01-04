@@ -724,3 +724,36 @@ a {
 }
 
 /* ===================================================== Question ==================================== */
+.question {
+  margin-top: 95px;
+}
+
+.question__list {
+  margin-top: 80px;
+}
+
+.question__title {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+  color: #080415;
+}
+
+.question__desc {
+  margin-top: 23px;
+}
+
+.question__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.question__input:checked ~ .question__content {
+  max-height: 200px;
+}
+
+.question__input:checked ~ .question__header .question__title {
+  color: var(--primary-color);
+}
