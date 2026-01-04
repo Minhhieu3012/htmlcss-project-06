@@ -404,6 +404,7 @@ a {
 
 /* ===================================================== Project ==================================== */
 .project__bg {
+  position: relative;
   background: var(--primary-color);
 }
 
@@ -476,6 +477,7 @@ a {
 .project__item-img {
   max-width: 246px;
   max-height: 187px;
+  z-index: 2;
 }
 
 .project__btn {
@@ -488,4 +490,30 @@ a {
 
   background: #fff;
   color: #080415;
+}
+
+.project__decor {
+  position: absolute;
+  width: 423px;
+  height: 234px;
+}
+
+.project__decor:nth-child(1) {
+  top: 289px;
+  left: 323px;
+}
+
+.project__decor:nth-child(2) {
+  top: 289px;
+  right: 175px;
+}
+
+.project__decor:nth-child(3) {
+  bottom: 228px;
+  left: 323px;
+}
+
+.project__decor:nth-child(4) {
+  bottom: 228px;
+  right: 175px;
 }
