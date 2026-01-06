@@ -834,3 +834,50 @@ a {
   max-width: 100%;
   object-fit: cover;
 }
+
+/* ===================================================== Action ==================================== */
+.action__bg {
+  position: relative;
+}
+
+.action__decor {
+  position: absolute;
+}
+
+.action__decor:nth-child(1) {
+  max-width: 295px;
+  left: 0;
+  bottom: 0;
+}
+
+.action__decor:nth-child(2) {
+  max-width: 635px;
+  height: 100%;
+  top: 0;
+  left: 320px;
+}
+
+.action__decor:nth-child(3) {
+  max-width: 295px;
+  right: 0;
+  top: 0;
+}
+
+.action {
+  margin-top: 140px;
+  padding-top: 42px;
+  text-align: center;
+  background: #fbfaff;
+}
+
+.action__icon {
+  font-size: 80px;
+}
+
+.action__heading {
+  margin-top: 20px;
+}
+
+.action__btn {
+  margin: 42px 0;
+}
