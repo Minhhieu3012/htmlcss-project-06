@@ -92,6 +92,7 @@ a {
 .header__inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-top: 20px;
 }
 
@@ -126,11 +127,6 @@ a {
 .logo {
   width: 100px;
   height: 100px;
-  margin-left: 357px;
-}
-
-.navbar {
-  margin-left: auto;
 }
 
 .navbar__list {
@@ -870,6 +866,10 @@ a {
   background: #fbfaff;
 }
 
+.action__inner {
+  margin-right: 90px;
+}
+
 .action__icon {
   font-size: 80px;
 }
@@ -880,4 +880,106 @@ a {
 
 .action__btn {
   margin: 42px 0;
+}
+
+/* ===================================================== Footer ==================================== */
+.footer {
+  margin-top: 50px;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-bottom: 1px solid rgb(12 7 32 / 20%);
+  padding-bottom: 32px;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  column-gap: 21px;
+}
+
+.footer__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 11px;
+  border: 1px solid rgb(93 59 238 / 20%);
+  border-radius: 50%;
+}
+
+.footer__icon {
+  width: 24px;
+}
+
+.footer__email {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.36;
+  text-decoration: underline;
+  color: #080415;
+}
+
+.footer__logo {
+  width: 100px;
+  height: 100px;
+}
+
+.footer__navbar-list {
+  display: flex;
+}
+
+.footer__navbar-link {
+  font-size: 1.8rem;
+  color: #51586a;
+  padding: 8px 22px;
+}
+
+.footer__navbar-link:hover {
+  color: #080415;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.copyright__left {
+  margin-left: 80px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: rgb(82 87 113 / 60%);
+}
+
+.copyright__right {
+  display: flex;
+  column-gap: 36px;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.copyright__right-link {
+  position: relative;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  letter-spacing: -0.03em;
+  color: rgb(82 87 113 / 60%);
+}
+
+.copyright__right-link:nth-child(2)::before {
+  position: absolute;
+  left: -13px;
+  top: 8px;
+  content: "";
+  width: 1.5px;
+  height: 14px;
+  background: rgb(82 87 113 / 60%);
 }
